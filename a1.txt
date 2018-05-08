@@ -1,3 +1,339 @@
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ get status
+bash: get: command not found
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        t1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git add t1.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git commit -m "created a fite t1"
+[master f2a5847] created a fite t1
+ Committer: Venkat Govindu <venkat.govindu@ggktech.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 t1.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ ls
+README.md  t1.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        t2.txt
+        t3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git add -A
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git commit -a -m "all are added"
+[master 5b88673] all are added
+ Committer: Venkat Govindu <venkat.govindu@ggktech.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+ create mode 100644 t2.txt
+ create mode 100644 t3.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ ls
+README.md  t1.txt  t2.txt  t3.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   t2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git commit -a -m "modified"
+[master be12537] modified
+ Committer: Venkat Govindu <venkat.govindu@ggktech.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ cat t2.txt
+how are you
+hjdjkjk
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ cat t1.txt
+ffffaaaaa
+hello
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   t1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git commit -a -m "added"
+[master fda612d] added
+ Committer: Venkat Govindu <venkat.govindu@ggktech.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ ls
+README.md  t1.txt  t2.txt  t3.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git branch fb
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git checkout fb
+Switched to branch 'fb'
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (fb)
+$ git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (fb)
+$ ls
+README.md  t1.txt  t2.txt  t3.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (fb)
+$ git status
+On branch fb
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        t4.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (fb)
+$ git add .
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (fb)
+$ git commit -a -m "another added"
+[fb 8979101] another added
+ Committer: Venkat Govindu <venkat.govindu@ggktech.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 t4.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (fb)
+$ ls
+README.md  t1.txt  t2.txt  t3.txt  t4.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (fb)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ ls
+README.md  t1.txt  t2.txt  t3.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git merge fb
+Updating fda612d..8979101
+Fast-forward
+ t4.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 t4.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ ls
+README.md  t1.txt  t2.txt  t3.txt  t4.txt
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/venkat.govindu/.ssh/id_rsa):
+Created directory '/c/Users/venkat.govindu/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/venkat.govindu/.ssh/id_rsa.
+Your public key has been saved in /c/Users/venkat.govindu/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:ivS3NSpeu78j5n6x5YRIym2wB5qS7dleUs6eOAgQKuk venkat.govindu@GGKU4MPC157
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|.                |
+|.o               |
+|=     o .        |
+|o. o.+ BS. .     |
+| E+.+o+== o o    |
+|   +.++o* o*     |
+|    + +Bo*+..    |
+|     o+*X=oo     |
++----[SHA256]-----+
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ ^C
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ cat "/c/Users/venkat.govindu/.ssh/id_rsa.pub"
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1KcxkDubniNzGCsG6OWnKcLXLCK5adzG1eFemZ0zy                                                                  FPZWRKWfzZq5NSJ7wycBmbprvFyKUU0wGUdJCz5yibphwHFYYd5APL1Vt104l2u8QF7T2X6vMyd3gJBa                                                                  B0pw48BhMhB2xWiNs/34SjQQyfFdxyC+HtnG4ZAgEb5B/W8CBiTmdLGzfDyGv4CP62UCR6CnwTeif6WI                                                                  tztil0ZRSc7QU4Q8M7bjxZOO8eN3m98BYVxM3kouZhbclB62q5NmZI+n+84dpGtV0BljEdV6DAoKITwF                                                                  mNi4Zt6RFCzA7BGa+gHxEfAMHawOV3O/K4JDMbL+Kuxs++Dfw0XCeU7lcwbR venkat.govindu@GGKU                                                                  4MPC157
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.253.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+Hi venkataramanagovindu! You've successfully authenticated, but GitHub does not provide shell access.
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git push origine master
+fatal: 'origine' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git push origin master
+Counting objects: 16, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (16/16), 1.37 KiB | 469.00 KiB/s, done.
+Total 16 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/venkataramanagovindu/repo.git
+   0cebf59..8979101  master -> master
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ cat t2.txt
+how are you
+hjdjkjk
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ git pull origin master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/venkataramanagovindu/repo
+ * branch            master     -> FETCH_HEAD
+   8979101..0bdc169  master     -> origin/master
+Updating 8979101..0bdc169
+Fast-forward
+ t2.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$ cat t2.txt
+how are you
+hjdjkjk
+follow
+
+venkat.govindu@GGKU4MPC157 MINGW64 /c/gvr/repo (master)
+$
 hi good reinnitialized
 how r u
 fine
